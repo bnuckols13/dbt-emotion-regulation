@@ -309,7 +309,7 @@
             position: relative;
         }
         .acc-body ul li::before {
-            content: '—';
+            content: '·';
             position: absolute;
             left: 0;
             color: var(--text-3);
@@ -507,9 +507,9 @@
     <div class="page active">
 
         <div class="section-label warm">Welcome</div>
-        <h2><span class="timing">5–8 min</span>About today's group</h2>
+        <h2><span class="timing">5 to 8 min</span>About today's group</h2>
         <p class="body-text">
-            Today we're looking at how emotions actually work — what they're trying to tell you, and what
+            Today we're looking at how emotions actually work: what they're trying to tell you, and what
             to do when an emotion is pushing you toward something that isn't going to help. This is not
             about suppressing anything. It's about having more options.
         </p>
@@ -517,7 +517,7 @@
         <div class="callout" style="margin-top: 1.5rem;">
             <div class="callout-label">Confidentiality</div>
             <p>
-                What's shared here stays here. Names, stories, details — protected. The one exception
+                What's shared here stays here. Names, stories, details. All protected. The one exception
                 is safety: if there's risk of harm, that changes things. Outside of that, this space is yours.
             </p>
         </div>
@@ -532,25 +532,41 @@
         <hr class="divider">
 
         <div class="section-label">Check-in</div>
-        <h2><span class="timing">8–10 min</span>One of the following — or pass</h2>
-        <p class="body-text">Share your name and one of these. Take what fits.</p>
+        <h2><span class="timing">10 min</span>Getting into it</h2>
 
-        <div class="options-grid">
-            <div class="option" onclick="select(this)">
-                <div class="option-label">Emotional temperature</div>
-                <div class="option-desc">Cool, warm, or on fire right now?</div>
+        <h3 style="margin-top: 1.5rem;">1. Bridge question</h3>
+        <p class="body-text" style="margin-top: 0.25rem;">
+            Share your name, then: <strong>Think of the last time an emotion made a decision for you before you had a chance to think.</strong> What was the emotion, and what did it have you do?
+        </p>
+        <div class="callout" style="margin-top: 0.75rem;">
+            <p>Pass is always fine. A one-sentence answer is enough.</p>
+        </div>
+
+        <h3 style="margin-top: 2rem;">2. Experiential exercise</h3>
+        <p class="body-text" style="margin-top: 0.25rem;">
+            Close your eyes or soften your gaze. Bring to mind something mildly frustrating from the past few days. Nothing major. A small irritation.
+        </p>
+        <div class="steps" style="margin-top: 1rem;">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <div class="step-q">Notice where the frustration lives in your body.</div>
+                    <div class="step-hint">Chest, jaw, shoulders, stomach. Just notice.</div>
+                </div>
             </div>
-            <div class="option" onclick="select(this)">
-                <div class="option-label">An emotion on repeat</div>
-                <div class="option-desc">Something that keeps showing up</div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <div class="step-q">Notice what the frustration wants you to do.</div>
+                    <div class="step-hint">Vent? Shut down? Fix something? Just name the urge.</div>
+                </div>
             </div>
-            <div class="option" onclick="select(this)">
-                <div class="option-label">One thing about emotions</div>
-                <div class="option-desc">That you wish you understood better</div>
-            </div>
-            <div class="option" onclick="select(this)">
-                <div class="option-label">Pass</div>
-                <div class="option-desc">You're here, and that counts</div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <div class="step-q">Now let it go. Open your eyes.</div>
+                    <div class="step-hint">That sequence you just did (event, body, urge) is exactly what we're learning today.</div>
+                </div>
             </div>
         </div>
 
@@ -565,7 +581,7 @@
     <div class="page">
 
         <div class="section-label warm">The Emotion Chain</div>
-        <h2><span class="timing">15–20 min</span>How emotions actually work</h2>
+        <h2><span class="timing">15 to 20 min</span>How emotions actually work</h2>
         <p class="body-text">
             Emotions don't come out of nowhere. They follow a chain. Each step leads to the next.
             Click any step to see how it works.
@@ -595,23 +611,23 @@
         </div>
 
         <div class="chain-detail active" id="cd0">
-            <p><strong>The prompting event.</strong> Something happens — external (someone cancels on you) or internal (a memory surfaces). This is the trigger, not the emotion itself.</p>
+            <p><strong>The prompting event.</strong> Something happens. It can be external (someone cancels on you) or internal (a memory surfaces). This is the trigger, not the emotion itself.</p>
             <div class="chain-example">Someone doesn't text you back for hours.</div>
         </div>
         <div class="chain-detail" id="cd1">
             <p><strong>Your interpretation.</strong> Your brain makes meaning instantly, usually without you noticing. This is where your history, beliefs, and assumptions live. The same event produces completely different emotions depending on the story your brain tells.</p>
-            <div class="chain-example">"They're ignoring me" vs. "They're probably busy" — same event, different chain.</div>
+            <div class="chain-example">"They're ignoring me" vs. "They're probably busy." Same event, different chain.</div>
         </div>
         <div class="chain-detail" id="cd2">
-            <p><strong>The emotion shows up.</strong> Not just a feeling — a full-body experience. Emotions come with physical sensations, facial expressions, and cognitive changes. They happen fast and carry information.</p>
+            <p><strong>The emotion shows up.</strong> Not just a feeling. A full-body experience. Emotions come with physical sensations, facial expressions, and cognitive changes. They happen fast and carry information.</p>
             <div class="chain-example">Anxiety: chest tightens, mind races. Anger: jaw clenches, heat rises, focus narrows.</div>
         </div>
         <div class="chain-detail" id="cd3">
-            <p><strong>The action urge.</strong> Every emotion has a built-in urge. Fear says run. Anger says fight. Shame says hide. These urges are not choices — they're wired in. The choice comes next.</p>
+            <p><strong>The action urge.</strong> Every emotion has a built-in urge. Fear says run. Anger says fight. Shame says hide. These urges are not choices. They're wired in. The choice comes next.</p>
             <div class="chain-example">Anxiety urge: check your phone again, send a follow-up, rehearse what you'll say.</div>
         </div>
         <div class="chain-detail" id="cd4">
-            <p><strong>What you actually do.</strong> This is where skill meets emotion. You can follow the urge or choose differently. The goal isn't to always override the urge — sometimes it fits. The goal is to have a choice.</p>
+            <p><strong>What you actually do.</strong> This is where skill meets emotion. You can follow the urge or choose differently. The goal isn't to always override the urge. Sometimes it fits. The goal is to have a choice.</p>
             <div class="chain-example">You notice the urge to double-text. You sit with it. Then you decide with your full brain, not just the anxious part.</div>
         </div>
 
@@ -635,7 +651,7 @@
                         <li><strong>Guilt</strong> says you've violated your own values</li>
                         <li><strong>Shame</strong> says you're at risk of rejection</li>
                     </ul>
-                    <div class="aside">The question is never "how do I stop feeling this?" — it's "what is this telling me, and does it fit what's actually happening?"</div>
+                    <div class="aside">The question is never "how do I stop feeling this?" The question is "what is this telling me, and does it fit what's actually happening?"</div>
                 </div>
             </div>
             <div class="acc-item">
@@ -644,7 +660,7 @@
                     <div class="acc-icon">+</div>
                 </div>
                 <div class="acc-body">
-                    <p>Before acting on an emotion, check whether it fits the facts. Not whether the emotion is real — it's always real. Whether it matches the situation.</p>
+                    <p>Before acting on an emotion, check whether it fits the facts. Not whether the emotion is real (it's always real). Whether it matches the situation.</p>
                     <ul>
                         <li>What event triggered the emotion?</li>
                         <li>What am I telling myself about it?</li>
@@ -660,19 +676,19 @@
                     <div class="acc-icon">+</div>
                 </div>
                 <div class="acc-body">
-                    <p>When an emotion doesn't fit the facts — or when acting on it will make things worse — you do the opposite of what the emotion pushes you to do. All the way.</p>
+                    <p>When an emotion doesn't fit the facts, or when acting on it will make things worse, you do the opposite of what the emotion pushes you to do. All the way.</p>
                     <ul>
-                        <li>Not faking — choosing a different behavioral path</li>
+                        <li>Not faking. Choosing a different behavioral path</li>
                         <li>All the way: body language, voice, posture, everything</li>
-                        <li>Half-measures don't work — approaching what you fear while clenching your fists isn't opposite action</li>
-                        <li>It works because emotions and actions reinforce each other — change one, the other follows</li>
+                        <li>Half-measures don't work. Approaching what you fear while clenching your fists isn't opposite action</li>
+                        <li>It works because emotions and actions reinforce each other. Change one, the other follows</li>
                     </ul>
                     <div class="aside">Opposite action is not suppression. Suppression says "don't feel that." Opposite action says "I feel this, and I'm choosing to act differently because the urge isn't helping me right now."</div>
                 </div>
             </div>
             <div class="acc-item">
                 <div class="acc-header" onclick="toggleAcc(this)">
-                    <div class="acc-title">When to use it — and when not to</div>
+                    <div class="acc-title">When to use it, and when not to</div>
                     <div class="acc-icon">+</div>
                 </div>
                 <div class="acc-body">
@@ -680,8 +696,8 @@
                     <ul>
                         <li><strong>Use it when:</strong> the emotion doesn't fit the facts, or acting on the urge will make things worse</li>
                         <li><strong>Don't use it when:</strong> the emotion fits and acting on the urge is effective</li>
-                        <li>If your anger is about a real boundary violation — honor it</li>
-                        <li>If your guilt is about something you actually did — that guilt is useful</li>
+                        <li>If your anger is about a real boundary violation, honor it</li>
+                        <li>If your guilt is about something you actually did, that guilt is useful</li>
                     </ul>
                     <div class="aside">The skill is knowing when the urge is helping you and when it's running on autopilot.</div>
                 </div>
@@ -699,9 +715,9 @@
     <div class="page">
 
         <div class="section-label cool">Opposite Action Reference</div>
-        <h2><span class="timing">15–20 min</span>The urge vs. the opposite — by emotion</h2>
+        <h2><span class="timing">15 to 20 min</span>The urge vs. the opposite, by emotion</h2>
         <p class="body-text">
-            Left side is what the emotion pushes you to do. Right side is the opposite action —
+            Left side is what the emotion pushes you to do. Right side is the opposite action,
             for when the emotion <strong>doesn't fit the facts</strong> or when acting on it makes things worse.
         </p>
 
@@ -778,8 +794,8 @@
         <div class="section-label cool">Guided exercise</div>
         <h2>Check the facts</h2>
         <p class="body-text">
-            Think of an emotion you've been sitting with this week. Walk through these steps —
-            in your head, out loud, or on paper.
+            Think of an emotion you've been sitting with this week. Walk through these steps.
+            In your head, out loud, or on paper.
         </p>
 
         <div class="steps">
@@ -787,7 +803,7 @@
                 <div class="step-num">1</div>
                 <div class="step-content">
                     <div class="step-q">What emotion am I feeling?</div>
-                    <div class="step-hint">Name it specifically. "Bad" isn't an emotion. Angry, ashamed, scared, hurt — those are.</div>
+                    <div class="step-hint">Name it specifically. "Bad" isn't an emotion. Angry, ashamed, scared, hurt. Those are.</div>
                 </div>
             </div>
             <div class="step">
@@ -822,7 +838,7 @@
                 <div class="step-num">6</div>
                 <div class="step-content">
                     <div class="step-q">Will acting on it help or make things worse?</div>
-                    <div class="step-hint">If it helps — follow the urge. If not — opposite action.</div>
+                    <div class="step-hint">If it helps, follow the urge. If not, opposite action.</div>
                 </div>
             </div>
         </div>
@@ -842,7 +858,7 @@
     <div class="page">
 
         <div class="section-label warm">Discussion</div>
-        <h2><span class="timing">20–25 min</span>Open it up</h2>
+        <h2><span class="timing">20 to 25 min</span>Open it up</h2>
         <p class="body-text">
             Starting points, not a script. Let the conversation go where it goes. Pass is always fine.
         </p>
@@ -850,7 +866,7 @@
         <div class="questions">
             <div class="question">
                 <div class="question-label">Opening</div>
-                <div class="question-text">Looking at the emotion chain — which step do you usually notice first? The event, the thought, the body sensation, or the urge?</div>
+                <div class="question-text">Looking at the emotion chain, which step do you usually notice first? The event, the thought, the body sensation, or the urge?</div>
             </div>
             <div class="question">
                 <div class="question-label">The urge gap</div>
@@ -867,7 +883,7 @@
             </div>
             <div class="question">
                 <div class="question-label">The harder question</div>
-                <div class="question-text">Is there an emotion you've been taught is "bad" — one you try to get rid of instead of listening to? What would happen if you treated it as information?</div>
+                <div class="question-text">Is there an emotion you've been taught is "bad"? One you try to get rid of instead of listening to? What would happen if you treated it as information?</div>
             </div>
         </div>
 
@@ -886,8 +902,8 @@
     <div class="page">
 
         <div class="section-label">Closing</div>
-        <h2><span class="timing">5–7 min</span>One last round</h2>
-        <p class="body-text">Share your name and one of the following — or pass.</p>
+        <h2><span class="timing">5 to 7 min</span>One last round</h2>
+        <p class="body-text">Share your name and one of the following, or pass.</p>
 
         <div class="options-grid">
             <div class="option" onclick="select(this)">
@@ -924,8 +940,8 @@
 
     <div class="footer">
         <strong>Crisis resources</strong><br>
-        988 Suicide & Crisis Lifeline — call or text 988<br>
-        Crisis Text Line — text HOME to 741741
+        988 Suicide & Crisis Lifeline: call or text 988<br>
+        Crisis Text Line: text HOME to 741741
     </div>
 
 </div>
